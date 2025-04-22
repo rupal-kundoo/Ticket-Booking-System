@@ -1,0 +1,88 @@
+[
+  {
+    "user_id": "c463d4ca-0683-4ef3-8ebc-7b553c383519",
+    "user_name": "Rupal",
+    "password": "Kundoo",
+    "hash_password": "$2a$10$iJBB33axLlAGvSb7MiivoeMJYd5eFPPIX47P9PzFdqOT7YvkJaJJi",
+    "ticket_booked": [
+      {
+        "ticketId": "f8172aab-71a2-49a8-ae9a-4d03cfd33002",
+        "userId": "c463d4ca-0683-4ef3-8ebc-7b553c383519",
+        "source": "Bangalore",
+        "destination": "Delhi",
+        "ticketTime": "2025-04-20T19:09:22.896852700",
+        "trains": {
+          "train_no": "12345",
+          "train_id": "bacs--Vande bharat",
+          "seats": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "station_time": {
+            "bangalore": "13:50:00",
+            "jaipur": "13:50:00",
+            "delhi": "13:50:00"
+          },
+          "stations": [
+            "bangalore",
+            "jaipur",
+            "delhi"
+          ],
+          "traininfo": "train id is bacs--Vande bharat train no: 12345"
+        },
+        "ticketinfo": "Ticket ID: f8172aab-71a2-49a8-ae9a-4d03cfd33002 belongs to User c463d4ca-0683-4ef3-8ebc-7b553c383519 from Bangalore to Delhi on 2025-04-20T19:09:22.896852700"
+      }
+    ]
+  },
+  {
+    "user_id": "5a0076df-c43d-4144-90c2-0ad1d3174276",
+    "user_name": "Parul",
+    "password": "Gulati",
+    "hash_password": "$2a$10$mMafcZAw997PPGw/xn.e2OzryNvWPsZVtQjPlywCqzX/2Z4bhpmdW",
+    "ticket_booked": []
+  },
+  {
+    "user_id": "6324225d-2517-4813-9cac-c35acb99784e",
+    "user_name": "deva",
+    "password": "Singh",
+    "hash_password": "$2a$10$iPp6CWUSuuragqZgcMvETev9qX3H49ev2WAesrM.CEDQNBjo.HpHe",
+    "ticket_booked": []
+  },
+  {
+    "user_id": "402bcb34-c694-480f-9615-7e9af8a34e63",
+    "user_name": "Devda",
+    "password": "Singh",
+    "hash_password": "$2a$10$6rYomZTnpt2bdKQppa5LZ.QPt3ZTDRHuLynnWI3MqOFhw6ztVX7lK",
+    "ticket_booked": []
+  }
+]
