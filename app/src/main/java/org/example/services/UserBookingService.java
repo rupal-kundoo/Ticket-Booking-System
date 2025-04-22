@@ -259,7 +259,7 @@ public class UserBookingService {
                     }
                     else {
                         u.getTicketBooked().add(ticket);
-                        System.out.println(u.getTicketBooked().add(ticket));
+//                        System.out.println(u.getTicketBooked().add(ticket));
                         update(u);
                     }
                 }
@@ -274,7 +274,7 @@ public class UserBookingService {
             }
            else {
                user.getTicketBooked().add(ticket);
-               System.out.println(user.getTicketBooked().add(ticket));
+         //      System.out.println(user.getTicketBooked().add(ticket));
                update(user);
             }
 */
