@@ -124,6 +124,7 @@ public class UserBookingService {
         File f = new File(resource.toURI());   //safer than resource.getFile()
         OBJECT_MAPPER.writerWithDefaultPrettyPrinter().writeValue(f, userList);*/
 
+        /* getters and setters are only called when you access fields or jackson reads/write object.*/
         File f = new File(WRITABLE_USER_PATH);
         OBJECT_MAPPER.writerWithDefaultPrettyPrinter().writeValue(f, userList);
         System.out.println("Saved user json data to userlist:" + WRITABLE_USER_PATH);
@@ -258,6 +259,8 @@ public class UserBookingService {
                         update(u);
                     }
                     else {
+                        //u.getticketbooked()==null check, ensure you never call .add() on a null list.
+                        //Always call u.getTicketBooked().add(ticket) whether it was empty or already had tickets, you are simply appending the new one.
                         u.getTicketBooked().add(ticket);
 //                        System.out.println(u.getTicketBooked().add(ticket));
                         update(u);

@@ -8,6 +8,26 @@ import java.util.UUID;
 
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
 @JsonIgnoreProperties(ignoreUnknown = true)
+/*  If the JSON contains fields that are not in this class, ignore them when deserializing(reading).
+example ticket info is not a filed in your class, now jackson will not stop from writing extra files to json file, it will still serialize.
+
+
+Serialization:
+writeValue
+List<User>  ---------->into JSON
+{userid":"",
+"username":""}
+
+Deserialization()
+readValue
+reads the files and rebuilds the list of user objects in memoruy.
+
+
+use : @JsonIgnoreProperties(ignoreUnknown = true)   :Deserialization(json has the field but class does not , it ignores)
+use:  @JsonIgnore                                   :Serialization/Deserialization
+
+*/
+
 public class Ticket {
 
     private String ticketId;
