@@ -8,6 +8,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
 repositories {
@@ -35,4 +36,12 @@ java {
 application {
     // Define the main class for the application.
     mainClass = 'org.example.App'
+}
+//add below code to resolve the default main manifest issue.
+tasks.named('jar'){
+    manifest{
+        attributes(
+                'Main-Class':'org.example.App'
+        )
+    }
 }
